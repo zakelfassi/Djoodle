@@ -1,0 +1,66 @@
+h1 {
+	font-family : 'Salsa';
+	font-size: 30px;
+	text-align: center;
+	color: #666666;
+	text-shadow: 0px 0px 2px #333;
+}
+
+#main-canvas {
+	position: relative;
+	margin-top: 4%;
+	left: 50%;
+	margin-left: -400px;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+#saved-songs {
+  background: #FFF;
+  position: fixed;
+  margin-top: 20px;
+}
+
+#saved-songs a {
+	font: arial;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+	padding-top: 5px;
+}
+
+#saved-songs a:visited {
+	color: gray;
+}
+
+#saved-songs a:hover {
+	color: #999;
+}
+
+#saved-songs a:active {
+	text-shadow: 0px 0px 1px #666;
+}
+
+#record-button {
+	float: right;
+}
+
+/****Google Colors ! *****/
+
+.blue {
+	color: #3369E8;
+}
+
+.red {
+	color: #D50F25;
+}
+
+.green {
+	color: #009925;
+}
+
+.yellow {
+	color: #EEB211;
+}

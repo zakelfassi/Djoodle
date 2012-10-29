@@ -1,0 +1,83 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Djoodle - Google - g|Days 2012</title>
+  <meta name="description" content="Celebrating African music ! - {{ gdayname }}">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Salsa">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+	<h1>Use the <span class="blue">F</span><span class="red">G</span><span class="yellow">H</span> - <span class="blue">V</span><span class="green">B</span><span class="red">N</span> keys to play !</h1>
+	<div style="text-align: center; font-family: 'Salsa'; font-size: 13px;">(reload the page if the Djembes don't show! Working on a fix.)</div>
+  </header>
+  
+  <aside id="saved-songs"> <!-- Fetch this from local storage on page load -->
+    <ul> 
+      <li><a href="">Song 1</a></li>
+      <li><a href="">Song 2</a></li>
+      <li><a href="">Song ...</a></li>
+      <li><a href="">Song n</a></li>
+    </ul>
+  </aside>  
+  
+  <div role="main">
+    <canvas id="main-canvas" width="800" height="400"></canvas>
+  </div>
+  
+  
+  <div role="sounds">
+	<!--
+  	<audio id="djembe1" preload="auto" autobuffer> 
+  		<source src="sounds/djembe1.mp3" />
+  		<source src="sounds/djembe1.aac" />
+	</audio>
+  	<audio id="djembe2" preload="auto" autobuffer> 
+  		<source src="sounds/djembe2.mp3" />
+  		<source src="sounds/djembe2.aac" />
+	</audio>
+  	<audio id="djembe3" preload="auto" autobuffer> 
+  		<source src="sounds/djembe3.mp3" />
+  		<source src="sounds/djembe3.aac" />
+	</audio>
+  	<audio id="djembe4" preload="auto" autobuffer> 
+  		<source src="sounds/djembe4.mp3" />
+  		<source src="sounds/djembe4.aac" />
+	</audio>		
+  	<audio id="djembe5" preload="auto" autobuffer> 
+  		<source src="sounds/djembe5.mp3" />
+  		<source src="sounds/djembe5.aac" />
+	</audio>
+  	<audio id="djembe6" preload="auto" autobuffer> 
+  		<source src="sounds/djembe6.mp3" />
+  		<source src="sounds/djembe6.aac" />
+	</audio>
+	-->
+  </div>
+  <footer>
+    <input type="button" id="record-button" value="Record !">
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/djoodle.js"></script>
+  <script>
+    window.addEventListener("load", function load(event){  
+      window.removeEventListener("load", load, false); //remove listener, no longer needed
+      a = new Djoodle();
+    },false);
+  </script>
+  <!-- end scripts -->
+</body>
+</html>
